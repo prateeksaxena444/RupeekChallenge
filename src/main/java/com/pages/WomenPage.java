@@ -25,15 +25,12 @@ public class WomenPage {
 	public void printProdctDtails(WebDriver driver)
 	{
 		List<WebElement> resultsListname = driver.findElements(By.className("product-name"));
+		List<WebElement> resultsListprice = driver.findElements(By.className("price product-price"));
 		
 		for(WebElement result:resultsListname)
 		{
-			Actions action = new Actions(driver);
-			action.moveToElement(result).build().perform();
-			
+			System.out.println(result.getText());
 		}
-		
-		List<WebElement> resultsListprice = driver.findElements(By.className("price product-price"));
 		
 		for(WebElement result:resultsListprice)
 		{
