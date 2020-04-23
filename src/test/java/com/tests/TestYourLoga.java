@@ -47,7 +47,7 @@ public class TestYourLoga {
 	
 	
 	@Test(priority=2)
-	public void filterbyPrice() 
+	public void filterbyPrice() throws InterruptedException 
 	{
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
