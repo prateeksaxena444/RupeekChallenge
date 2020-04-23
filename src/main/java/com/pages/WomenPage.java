@@ -27,6 +27,7 @@ public class WomenPage {
 		List<WebElement> resultsListname = driver.findElements(By.className("product-name"));
 		List<WebElement> resultsListprice = driver.findElements(By.className("price product-price"));
 		
+		
 		for(WebElement result:resultsListname)
 		{
 			System.out.println(result.getText());

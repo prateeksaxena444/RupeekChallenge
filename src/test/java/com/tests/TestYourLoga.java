@@ -47,26 +47,21 @@ public class TestYourLoga {
 	
 	
 	@Test(priority=2)
-	public void filterbyPrice() throws InterruptedException
+	public void filterbyPrice() 
 	{
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0,1500)");
 		 wp.scollPriceBar(driver);
-		 Thread.sleep(5000);
-		 
 	}
+	
 	@Test(priority=3)
-	public void print_product_details() throws InterruptedException
+	public void print_product_details()
 	{
-		Thread.sleep(5000);
 		wp.printProdctDtails(driver);
-		
-
 	}
 	 
 	@AfterClass(description = "closing chromer driver")
-	 
 	public void afterclass(){
 	driver.close();
 	}
